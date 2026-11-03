@@ -2,3 +2,8 @@
 title: Lẩu Bà Mơ
 description: Game quản lý quán lẩu đầu ngõ Hà Nội · A cozy Hanoi hotpot shop game
 lang: vi
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default

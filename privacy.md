@@ -1,3 +1,10 @@
+---
+title: Chính sách quyền riêng tư · Privacy Policy — Lẩu Bà Mơ
+description: Chính sách quyền riêng tư của game Lẩu Bà Mơ. Privacy policy for Lẩu Bà Mơ.
+---
+
+<div class="vi" markdown="1">
+
 # Chính sách quyền riêng tư — Lẩu Bà Mơ
 
 *Cập nhật: 31/10/2026*
@@ -22,7 +29,8 @@ Lẩu Bà Mơ là game chơi một mình, không cần tài khoản.
 ## Liên hệ
 - Email: phuongtdoan2008@gmail.com
 
----
+</div>
+<div class="en" markdown="1">
 
 # Privacy Policy — Lẩu Bà Mơ (Grandma Mơ's Hotpot)
 
@@ -35,3 +43,5 @@ Lẩu Bà Mơ is a single-player game. No account is needed.
 - **In-app purchases** are processed by **Apple**. We never receive your payment details; the game only knows which packs you own.
 - The game is not directed to children under 13.
 - Contact: phuongtdoan2008@gmail.com
+
+</div>
