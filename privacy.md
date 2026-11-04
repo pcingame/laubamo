@@ -18,7 +18,7 @@ Lẩu Bà Mơ là game chơi một mình, không cần tài khoản.
 - Game chỉ có **quảng cáo tự chọn**: bạn bấm nút "Xem QC" thì mới phát. Không có quảng cáo tự bật lên.
 - Quảng cáo do **Google AdMob** cung cấp. Khi tải và phát quảng cáo, Google có thể thu thập mã định danh thiết bị, địa chỉ IP, thông tin máy và tương tác với quảng cáo, theo [chính sách của Google](https://policies.google.com/technologies/partner-sites).
 - Ở những nơi luật yêu cầu (vd. Liên minh châu Âu, Anh), game hỏi bạn đồng ý trước khi tải quảng cáo. Bạn có thể đổi lựa chọn bất cứ lúc nào.
-- Game không xin quyền theo dõi (App Tracking Transparency); trên iOS, quảng cáo không dùng mã quảng cáo IDFA.
+- Lần đầu bạn bấm xem quảng cáo, iOS hỏi bạn có cho phép theo dõi (App Tracking Transparency) không. Nếu bạn cho phép, Google được dùng mã quảng cáo IDFA để chọn quảng cáo hợp với bạn hơn. Nếu không, quảng cáo vẫn phát nhưng không dùng IDFA. Bạn đổi lựa chọn được trong Cài đặt iPhone → Quyền riêng tư & Bảo mật → Theo dõi.
 
 ## Mua trong app
 - Thanh toán do **Apple** xử lý. Chúng tôi không nhận và không lưu thông tin thẻ hay tài khoản của bạn; game chỉ biết bạn đã mua gói nào.
@@ -39,7 +39,7 @@ Lẩu Bà Mơ là game chơi một mình, không cần tài khoản.
 Lẩu Bà Mơ is a single-player game. No account is needed.
 
 - **Game data** (progress, in-game money, shop name, settings) is stored **only on your device** and is never sent to our servers.
-- **Ads** are **opt-in rewarded ads only**: an ad plays only when you tap a "watch ad" button. Ads are served by **Google AdMob**, which may collect device identifiers, IP address, device information and ad interactions under [Google's policy](https://policies.google.com/technologies/partner-sites). Where required by law (e.g. EU/UK) the game asks for consent before loading ads. The game does not request App Tracking Transparency permission.
+- **Ads** are **opt-in rewarded ads only**: an ad plays only when you tap a "watch ad" button. Ads are served by **Google AdMob**, which may collect device identifiers, IP address, device information and ad interactions under [Google's policy](https://policies.google.com/technologies/partner-sites). Where required by law (e.g. EU/UK) the game asks for consent before loading ads. The first time you tap to watch an ad, iOS asks whether you allow tracking (App Tracking Transparency). If you allow it, Google may use your advertising identifier (IDFA) to show more relevant ads; if not, ads still play without the IDFA. You can change this in iPhone Settings → Privacy & Security → Tracking.
 - **In-app purchases** are processed by **Apple**. We never receive your payment details; the game only knows which packs you own.
 - The game is not directed to children under 13.
 - Contact: phuongtdoan2008@gmail.com
