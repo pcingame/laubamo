@@ -11,7 +11,7 @@ description: Tải Lẩu Bà Mơ cho Android (file APK) và cách cài từng b�
 
 <div class="contact">
   <p>
-    <strong><span class="vi">Bản mới nhất</span><span class="en">Latest version</span></strong><br>
+    <strong><span class="vi">Bản mới nhất</span><span class="en">Latest version</span><span id="ver"></span></strong><br>
     <span class="vi">Android 7.0 trở lên · khoảng 75 MB · miễn phí</span>
     <span class="en">Android 7.0 or later · about 75 MB · free</span>
   </p>
@@ -19,6 +19,33 @@ description: Tải Lẩu Bà Mơ cho Android (file APK) và cách cài từng b�
     <span class="vi">⬇ Tải file APK</span><span class="en">⬇ Download APK</span>
   </a>
 </div>
+<details id="news" hidden>
+  <summary><span class="vi">Có gì mới</span><span class="en">What's new</span></summary>
+  <p id="notes" style="white-space:pre-line"></p>
+</details>
+<div class="qr">
+  <img src="img/qr_android.svg" width="148" height="148" alt="Mã QR tới trang này / QR code to this page">
+  <p>
+    <span class="vi"><strong>Đang xem trên máy tính?</strong> Quét mã bằng camera điện thoại Android để mở trang này trên máy và tải thẳng về.</span>
+    <span class="en"><strong>On a computer?</strong> Scan the code with your Android phone's camera to open this page on the phone and download there.</span>
+  </p>
+</div>
+<script>
+  // Số bản, ngày ra và ghi chú lấy từ GitHub Release mới nhất; lỗi mạng thì giữ chữ tĩnh ở trên.
+  fetch('https://api.github.com/repos/pcingame/laubamo/releases/latest')
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (r) {
+      if (!r) return;
+      var d = new Date(r.published_at);
+      document.getElementById('ver').textContent =
+        ': ' + r.tag_name.replace('android-v', '') + ' · ' + d.toLocaleDateString('vi-VN');
+      if (r.body) {
+        document.getElementById('notes').textContent = r.body;
+        document.getElementById('news').hidden = false;
+      }
+    })
+    .catch(function () {});
+</script>
 <p>
   <span class="vi">Dùng iPhone? <a href="https://apps.apple.com/app/id6829775156" rel="noopener">Tải trên App Store</a>.</span>
   <span class="en">On iPhone? <a href="https://apps.apple.com/app/id6829775156" rel="noopener">Get it on the App Store</a>.</span>

@@ -1,6 +1,6 @@
 ---
 title: Lẩu Bà Mơ — Game quán lẩu đầu ngõ Hà Nội
-description: Mở quán lẩu đầu ngõ Hà Nội cùng Bà Mơ. Nhúng lẩu, đi chợ, lớn thành chuỗi quán. Chơi một mình, không cần mạng. A cozy Hanoi hotpot shop game for iPhone.
+description: Mở quán lẩu đầu ngõ Hà Nội cùng Bà Mơ. Nhúng lẩu, đi chợ, lớn thành chuỗi quán. Chơi một mình, không cần mạng. A cozy Hanoi hotpot shop game for iPhone and Android.
 wide: true
 ---
 
@@ -29,9 +29,9 @@ wide: true
       <span class="vi">Bà Mơ có một quán lẩu nhỏ đầu ngõ. Nồi nước dùng còn sôi, khách đã xếp hàng. Bạn giúp bà từ chiếc nồi đầu tiên đến cả một chuỗi quán trên bản đồ Hà Nội.</span>
       <span class="en">Grandma Mơ runs a tiny hotpot shop at the mouth of a Hanoi alley. The broth is still bubbling and guests are already lining up. Help her grow from one pot to a chain of shops across Hanoi.</span>
     </p>
-    <div class="cta">
-      <a class="btn mint" href="https://apps.apple.com/app/id6829775156" rel="noopener"><span class="vi">Tải trên App Store</span><span class="en">Get it on the App Store</span></a>
-      <a class="btn butter" href="android.html"><span class="vi">Tải cho Android</span><span class="en">Get it on Android</span></a>
+    <div class="cta" data-dl>
+      <a class="btn mint" data-os="ios" href="https://apps.apple.com/app/id6829775156" rel="noopener"><span class="vi">Tải trên App Store</span><span class="en">Get it on the App Store</span></a>
+      <a class="btn butter" data-os="android" href="android.html"><span class="vi">Tải cho Android</span><span class="en">Get it on Android</span></a>
       <a class="btn peach" href="#anh"><span class="vi">Xem trong game</span><span class="en">See the game</span></a>
     </div>
     <div class="badges">
@@ -157,7 +157,27 @@ wide: true
   </div>
 </section>
 
+<section id="tai-game">
+  <div class="wrap center">
+    <span class="eyebrow"><span class="vi">Miễn phí</span><span class="en">Free</span></span>
+    <h2><span class="vi">Mở quán cùng Bà Mơ</span><span class="en">Open the shop with Grandma Mơ</span></h2>
+    <p class="lead"><span class="vi">Có trên iPhone và Android. Tải về là chơi, không cần tài khoản.</span><span class="en">On iPhone and Android. Download and play, no account needed.</span></p>
+    <div class="cta" data-dl>
+      <a class="btn mint" data-os="ios" href="https://apps.apple.com/app/id6829775156" rel="noopener"><span class="vi">Tải trên App Store</span><span class="en">Get it on the App Store</span></a>
+      <a class="btn butter" data-os="android" href="android.html"><span class="vi">Tải cho Android</span><span class="en">Get it on Android</span></a>
+    </div>
+  </div>
+</section>
 <script>
+  // Mở bằng Android thì nút Android lên đầu (iPhone giữ App Store đầu).
+  (function () {
+    if (!/android/i.test(navigator.userAgent)) return;
+    document.querySelectorAll('[data-dl]').forEach(function (row) {
+      var a = row.querySelector('[data-os="android"]');
+      if (a) row.insertBefore(a, row.firstChild);
+    });
+  })();
+
   // Nút cuộn ảnh màn hình.
   (function () {
     var row = document.querySelector('.shots');

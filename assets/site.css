@@ -190,7 +190,7 @@ section { padding: 72px 0; }
 .stool.l { left: 16%; } .stool.r { right: 16%; background: var(--coral); }
 
 .hero .lead { margin: 30px auto 22px; }
-.hero .cta { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.cta { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
 .badges { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 22px; }
 .badges > span { padding: 4px 14px; border-radius: 99px; background: rgba(255, 253, 248, .8); border: 2px solid rgba(91, 70, 54, .3); font-weight: 700; font-size: 14px; }
 
@@ -332,3 +332,9 @@ html.js .reveal.in { opacity: 1; transform: none; }
   .shutter { display: none; }
   .bike, .cat, .cloud { display: none; }
 }
+#tai-game .cta { margin-top: 24px; }
+/* Trang Android: mã QR cho người xem trên máy tính (điện thoại thì ẩn). */
+.qr { display: flex; align-items: center; gap: 18px; margin: 18px 0; padding: 14px 18px; border: 2.5px dashed rgba(91, 70, 54, .4); border-radius: 18px; }
+.qr img { flex: none; border-radius: 8px; image-rendering: pixelated; }
+.qr p { margin: 0; }
+@media (max-width: 700px), (pointer: coarse) { .qr { display: none; } }
