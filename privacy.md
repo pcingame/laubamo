@@ -9,10 +9,11 @@ description: Chính sách quyền riêng tư của game Lẩu Bà Mơ. Privacy p
 
 *Cập nhật: 11/11/2026*
 
-Lẩu Bà Mơ là game chơi một mình, không cần tài khoản.
+Lẩu Bà Mơ là game chơi một mình, không bắt buộc tài khoản.
 
 ## Dữ liệu game
-- Tiến trình chơi (tiền trong game, số sao, tên quán bạn đặt, cài đặt) **chỉ lưu trên máy của bạn**. Chúng tôi không gửi lên máy chủ nào. Xoá game là xoá hết.
+- Tiến trình chơi (tiền trong game, số sao, tên quán bạn đặt, cài đặt) lưu trên máy của bạn (và iCloud của bạn trên iPhone). Xoá game là xoá bản trên máy.
+- Nếu bạn **tự chọn liên kết Google hoặc Apple** (Cài đặt › Tài khoản), game lưu tiến trình lên máy chủ **Supabase** để bạn lấy lại khi đổi máy. Chúng tôi nhận mã tài khoản và email do Google/Apple cung cấp (với Apple bạn có thể ẩn email), chỉ dùng để đăng nhập và lưu tiến trình. Bạn xoá tài khoản và bản lưu trên máy chủ bất cứ lúc nào bằng nút **Xoá tài khoản** trong Cài đặt.
 
 ## Quảng cáo
 - Game chỉ có **quảng cáo tự chọn**: bạn bấm nút "Xem QC" thì mới phát. Không có quảng cáo tự bật lên.
@@ -38,9 +39,10 @@ Lẩu Bà Mơ là game chơi một mình, không cần tài khoản.
 
 *Updated: November 11, 2026*
 
-Lẩu Bà Mơ is a single-player game. No account is needed.
+Lẩu Bà Mơ is a single-player game. An account is optional.
 
-- **Game data** (progress, in-game money, shop name, settings) is stored **only on your device** and is never sent to our servers.
+- **Game data** (progress, in-game money, shop name, settings) is stored on your device (and in your iCloud on iPhone).
+- **Optional account**: if you choose to link Google or Apple (Settings › Account), your progress is saved on a **Supabase** server so you can restore it on a new phone. We receive the account ID and email provided by Google/Apple (Apple lets you hide your email), used only for sign-in and saving progress. You can delete the account and the server save at any time with **Delete account** in Settings.
 - **Ads** are **opt-in rewarded ads only**: an ad plays only when you tap a "watch ad" button. On Android, ads are served by **Unity Ads**, which may collect the device advertising ID, IP address, device information and ad interactions under [Unity's policy](https://unity.com/legal/game-player-and-app-user-privacy-policy). On iPhone, ads are served by **Google AdMob**, which may collect device identifiers, IP address, device information and ad interactions under [Google's policy](https://policies.google.com/technologies/partner-sites). Where required by law (e.g. EU/UK) the game asks for consent before loading ads. The first time you tap to watch an ad, iOS asks whether you allow tracking (App Tracking Transparency). If you allow it, Google may use your advertising identifier (IDFA) to show more relevant ads; if not, ads still play without the IDFA. You can change this in iPhone Settings → Privacy & Security → Tracking.
 - **In-app purchases** on iPhone are processed by **Apple**. We never receive your payment details; the game only knows which packs you own.
 - **On Android** (APK download), packs are bought by **bank transfer**. To match a payment to an order, the game creates an anonymous ID for the device (no name, email or phone number) and stores orders (order code, pack, amount, time) on a **Supabase** server. **SePay** reads incoming transactions on the receiving bank account to confirm payment; the sender details recorded by the bank are only used to resolve problems.
