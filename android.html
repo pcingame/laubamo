@@ -14,6 +14,7 @@ description: Tải Lẩu Bà Mơ cho Android (file APK) và cách cài từng b�
     <strong><span class="vi">Bản mới nhất</span><span class="en">Latest version</span><span id="ver"></span></strong><br>
     <span class="vi">Android 7.0 trở lên · khoảng 75 MB · miễn phí</span>
     <span class="en">Android 7.0 or later · about 75 MB · free</span>
+    <span id="cnt" hidden><br><span class="vi"><b id="n"></b> lượt tải</span><span class="en"><b id="n2"></b> downloads</span></span>
   </p>
   <a class="btn mint" id="dl" href="https://github.com/pcingame/laubamo/releases/latest/download/lau-ba-mo.apk" rel="noopener">
     <span class="vi">⬇ Tải file APK</span><span class="en">⬇ Download APK</span>
@@ -31,11 +32,23 @@ description: Tải Lẩu Bà Mơ cho Android (file APK) và cách cài từng b�
   </p>
 </div>
 <script>
-  // Số bản, ngày ra và ghi chú lấy từ GitHub Release mới nhất; lỗi mạng thì giữ chữ tĩnh ở trên.
-  fetch('https://api.github.com/repos/pcingame/laubamo/releases/latest')
+  // Số bản, ngày ra và ghi chú lấy từ GitHub Release mới nhất; lượt tải = tổng download_count của mọi file APK
+  // trên các Release (GitHub chỉ liệt kê 100 bản gần nhất). Lỗi mạng thì giữ chữ tĩnh ở trên.
+  fetch('https://api.github.com/repos/pcingame/laubamo/releases?per_page=100')
     .then(function (r) { return r.ok ? r.json() : null; })
-    .then(function (r) {
-      if (!r) return;
+    .then(function (all) {
+      if (!all || !all.length) return;
+      var total = 0;
+      all.forEach(function (x) {
+        x.assets.forEach(function (a) { if (/\.apk$/.test(a.name)) total += a.download_count; });
+      });
+      if (total) {
+        var t = total.toLocaleString('vi-VN');
+        document.getElementById('n').textContent = t;
+        document.getElementById('n2').textContent = t;
+        document.getElementById('cnt').hidden = false;
+      }
+      var r = all[0];
       var d = new Date(r.published_at);
       document.getElementById('ver').textContent =
         ': ' + r.tag_name.replace('android-v', '') + ' · ' + d.toLocaleDateString('vi-VN');
