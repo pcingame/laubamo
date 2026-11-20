@@ -216,6 +216,14 @@ section { padding: 72px 0; }
 }
 .icon svg { width: 40px; height: 40px; }
 .card:hover .icon svg { animation: wiggle .5s ease-in-out; }
+/* Gói ủng hộ */
+.packs { grid-template-columns: repeat(auto-fit, minmax(min(440px, 100%), 1fr)); }
+.pack { display: grid; grid-template-columns: 64px 1fr; column-gap: 16px; row-gap: 6px; align-content: start; }
+.pack .icon { grid-row: 1 / 4; font-size: 32px; margin: 0; }
+.pack h3 { margin: 0; font-size: 19px; }
+.pack .new { margin-left: 8px; padding: 1px 8px; border: 2px solid var(--cocoa); border-radius: 99px; background: var(--butter); font-size: .7em; vertical-align: middle; }
+.pack .price { justify-self: start; padding: 3px 12px; border: 2px solid var(--cocoa); border-radius: 99px; background: var(--mint); font-weight: 800; font-variant-numeric: tabular-nums; }
+.note { margin-top: 22px; font-size: .92em; opacity: .85; }
 @keyframes wiggle { 25% { transform: rotate(-10deg); } 75% { transform: rotate(10deg); } }
 
 /* Ảnh màn hình */
