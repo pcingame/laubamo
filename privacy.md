@@ -7,7 +7,7 @@ description: Chính sách quyền riêng tư của game Lẩu Bà Mơ. Privacy p
 
 # Chính sách quyền riêng tư — Lẩu Bà Mơ
 
-*Cập nhật: 20/11/2026*
+*Cập nhật: 21/11/2026*
 
 Lẩu Bà Mơ là game chơi một mình, không bắt buộc tài khoản.
 
@@ -18,7 +18,7 @@ Lẩu Bà Mơ là game chơi một mình, không bắt buộc tài khoản.
 - **Tên trên bảng (tuỳ chọn)**: nếu bạn tự đặt tên cho bảng xếp hạng, tên đó được lưu trên **Supabase** và ai xem bảng cũng thấy. Tên được lọc chữ phản cảm; người chơi khác có thể báo cáo tên, tên bị nhiều người báo sẽ bị ẩn. Đừng dùng tên thật hay thông tin cá nhân. Muốn xoá tên, hãy đặt tên khác hoặc liên hệ chúng tôi.
 - **Quán bạn bè**: khi bạn mở màn Quán bạn bè, game gửi lên **Supabase** mặt tiền quán (đồ trang trí đang dùng, số bàn, ngày đang chơi, tổng sao) kèm mã ẩn danh và cấp một mã quán 6 ký tự. Người có mã quán của bạn thì thêm bạn, xem mặt tiền quán và tên trên bảng xếp hạng của bạn, và gửi lời mời trà (chọn trong các câu có sẵn, không gõ chữ tự do). Bạn xoá bạn bè bất cứ lúc nào.
 - **Cả ngõ nấu Tết** (dịp Tết): game gửi số nồi bạn nấu mỗi ngày lên **Supabase** kèm mã ẩn danh để cộng vào số chung của mọi người chơi.
-- **Báo lỗi và thống kê**: bản phát hành dùng **Firebase Crashlytics** (Google) để gửi báo cáo khi game bị lỗi (thông tin lỗi, loại máy, phiên bản hệ điều hành và game) và **Firebase Analytics** để đếm lượt dùng ẩn danh (mã cài đặt của app, các màn được mở, thời lượng chơi, khu vực ước lượng theo IP). Chúng tôi chỉ dùng để sửa lỗi và cải thiện game, theo [chính sách của Firebase](https://firebase.google.com/support/privacy).
+- **Báo lỗi và thống kê**: bản phát hành dùng **Firebase Crashlytics** (Google) để gửi báo cáo khi game bị lỗi (thông tin lỗi, loại máy, phiên bản hệ điều hành và game) và **Firebase Analytics** để đếm lượt dùng ẩn danh (mã cài đặt của app, các màn được mở, thời lượng chơi, khu vực ước lượng theo IP). **Firebase Remote Config** cho game biết bản mới nhất trên cửa hàng để báo bạn cập nhật; game chỉ tải về, không gửi tiến trình chơi. Chúng tôi chỉ dùng để sửa lỗi và cải thiện game, theo [chính sách của Firebase](https://firebase.google.com/support/privacy).
 
 ## Quảng cáo
 - Game chỉ có **quảng cáo tự chọn**: bạn bấm nút "Xem QC" thì mới phát. Không có quảng cáo tự bật lên.
@@ -42,7 +42,7 @@ Lẩu Bà Mơ là game chơi một mình, không bắt buộc tài khoản.
 
 # Privacy Policy — Lẩu Bà Mơ (Grandma Mơ's Hotpot)
 
-*Updated: November 20, 2026*
+*Updated: November 21, 2026*
 
 Lẩu Bà Mơ is a single-player game. An account is optional.
 
@@ -52,7 +52,7 @@ Lẩu Bà Mơ is a single-player game. An account is optional.
 - **Leaderboard name (optional)**: if you choose a custom leaderboard name, it is stored on **Supabase** and visible to anyone viewing the boards. Names are filtered for offensive words; other players can report a name, and names with several reports are hidden. Do not use your real name or personal details. To remove it, set another name or contact us.
 - **Friends' shops**: when you open Friends' shops, the game sends your shopfront (decorations in use, number of tables, current day, total stars) to **Supabase** with an anonymous ID and gives you a 6-character shop code. Anyone with your code can add you, view your shopfront and leaderboard name, and send you an iced-tea invite (chosen from fixed lines, no free text). You can remove friends at any time.
 - **Whole-alley Tết cooking** (during Tết): the game sends the number of pots you cook each day to **Supabase** with an anonymous ID, added to a shared total for all players.
-- **Crash reports and analytics**: release builds use **Firebase Crashlytics** (Google) to send a report when the game crashes (error details, device model, OS and game version) and **Firebase Analytics** to count anonymous usage (app instance ID, screens opened, play time, approximate region from IP). We use this only to fix bugs and improve the game, under [Firebase's privacy terms](https://firebase.google.com/support/privacy).
+- **Crash reports and analytics**: release builds use **Firebase Crashlytics** (Google) to send a report when the game crashes (error details, device model, OS and game version) and **Firebase Analytics** to count anonymous usage (app instance ID, screens opened, play time, approximate region from IP). **Firebase Remote Config** tells the game the latest store version so it can suggest updating; it only downloads, no game progress is sent. We use this only to fix bugs and improve the game, under [Firebase's privacy terms](https://firebase.google.com/support/privacy).
 - **Ads** are **opt-in rewarded ads only**: an ad plays only when you tap a "watch ad" button. On Android, ads are served by **Unity Ads**, which may collect the device advertising ID, IP address, device information and ad interactions under [Unity's policy](https://unity.com/legal/game-player-and-app-user-privacy-policy). On iPhone, ads are served by **Google AdMob**, which may collect device identifiers, IP address, device information and ad interactions under [Google's policy](https://policies.google.com/technologies/partner-sites). Where required by law (e.g. EU/UK) the game asks for consent before loading ads. The first time you tap to watch an ad, iOS asks whether you allow tracking (App Tracking Transparency). If you allow it, Google may use your advertising identifier (IDFA) to show more relevant ads; if not, ads still play without the IDFA. You can change this in iPhone Settings → Privacy & Security → Tracking.
 - **In-app purchases** on iPhone are processed by **Apple**. We never receive your payment details; the game only knows which packs you own.
 - **On Android** (APK download), packs are bought by **bank transfer**. To match a payment to an order, the game creates an anonymous ID for the device (no name, email or phone number) and stores orders (order code, pack, amount, time) on a **Supabase** server. **SePay** reads incoming transactions on the receiving bank account to confirm payment; the sender details recorded by the bank are only used to resolve problems.
