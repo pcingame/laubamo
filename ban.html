@@ -1,0 +1,34 @@
+---
+title: Ghé quán bạn · Visit a friend — Lẩu Bà Mơ
+description: Lời mời ghé quán trong Lẩu Bà Mơ. An invite to visit a friend's shop in Lẩu Bà Mơ.
+---
+
+<h1><span class="vi">Bạn mời bạn ghé quán</span><span class="en">A friend invites you over</span></h1>
+<div class="contact">
+  <p>
+    <span class="vi">Mã quán của bạn ấy</span><span class="en">Their shop code</span><br>
+    <strong id="code" style="font-size:2em;letter-spacing:.15em">——————</strong>
+  </p>
+  <a class="btn mint" id="open" href="#">
+    <span class="vi">Mở trong game</span><span class="en">Open in the game</span>
+  </a>
+  <p>
+    <span class="vi">Không mở được? Vào game › Quán bạn bè, nhập mã ở trên.</span>
+    <span class="en">Didn't open? In the game, go to Friends and enter the code above.</span>
+  </p>
+</div>
+<p>
+  <span class="vi">Chưa có game?</span><span class="en">Don't have the game yet?</span>
+  <a href="https://apps.apple.com/app/id6829775156">App Store</a> ·
+  <a href="android.html">Android</a>
+</p>
+<script>
+  // Chỉ nhận mã 6 chữ/số; link mở game: laubamo://open/ban/MÃ.
+  var c = (new URLSearchParams(location.search).get('c') || '').trim().toUpperCase();
+  if (/^[A-Z0-9]{6}$/.test(c)) {
+    document.getElementById('code').textContent = c;
+    document.getElementById('open').href = 'laubamo://open/ban/' + c;
+  } else {
+    document.getElementById('open').hidden = true;
+  }
+</script>
